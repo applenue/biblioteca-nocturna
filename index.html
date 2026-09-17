@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Libreria insomniaca</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <header style="text-align: center">
+        <h1>Libreria insomniaca</h1>
+        <p>Nunca puedo dormir por que mi mente no descansa, son mis libros los que consuelan la pena de nunca descansar.</p>
+    </header>
+
+    <main id="libreria-contenedor">
+        
+        <div class="tarjeta-libro" id="libro-1">
+            <img src="The Metamorphosis By Franz Kafka.jpeg" alt="Portada Metamorphosis" class="portada" height="150x200">
+            <div class="info-libro">
+                <span class="genero">Ficción</span>
+                <h2 class="titulo"> La metamorfosis</h2>
+                <p class="autor">Franz Kafka</p>
+                <button class="boton-ver" onclick="mostrarResumen('La metamorfosis', 'Si solo te quisieran mientras eres util, la vida te hace dar cuenta que no eres mas que una cucaracha burocratica en este mundo sin sentido')">Leer Resumen</button>
+            </div>
+        </div>
+
+        <div class="tarjeta-libro" id="libro-2">
+            <img src="1984 Book Cover.jpeg" alt="Portada 1984" class="portada" height="150x200">
+            <div class="info-libro">
+                <span class="genero">Distopía</span>
+                <h2 class="titulo">1984</h2>
+                <p class="autor">George Orwell</p>
+                <button class="boton-ver" onclick="mostrarResumen('1984', 'Tu pensamiento no es tuyo. son ideas que el gran hermano quiso que creyeras, creele o no, ya sabras si quieres encontrar la justicia ante lo innecesario de la libertad de pensamiento')">Leer Resumen</button>
+            </div>
+        </div>
+
+        <div class="tarjeta-libro" id="libro-3">
+            <img src="descarga.jpeg" alt="Portada shining" class="portada" height="150x200">
+            <div class="info-libro">
+                <span class="genero">Terror</span>
+                <h2 class="titulo">El resplandor</h2>
+                <p class="autor">Stephen King</p>
+                <button class="boton-ver" onclick="mostrarResumen('El resplandor', 'Encierrate en una caja, deja de escuchar a los muertos, cree en tu resplandor')">Leer Resumen</button>
+            </div>
+        </div>
+
+        <div class="tarjeta-libro" id="libro-4">
+            <img src="dostoyesky.jpeg" alt="Portada crimen" class="portada" height="150x200">
+            <div class="info-libro">
+                <span class="genero">Filosofia</span>
+                <h2 class="titulo">Crimen y castigo</h2>
+                <p class="autor">Fyodor Dostoyesky</p>
+                <button class="boton-ver" onclick="mostrarResumen('crimen y castigo', 'hay mas castigo que crimen, leete 200 paginas de una descrimpcion existencial de que es ser castigado y creer que llega la muerte')">Leer Resumen</button>
+            </div>
+        </div>
+
+    </main>
+
+    <script>
+  function mostrarResumen(titulo, texto) {
+    alert(titulo + ":\n\n" + texto);
+  }
+</script>
+
+</body>
+</html>
